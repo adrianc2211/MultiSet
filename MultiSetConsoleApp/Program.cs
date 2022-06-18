@@ -1,4 +1,5 @@
 ﻿using System;
+using MultiSetLibrary;
 
 namespace MultiSetConsoleApp
 {
@@ -6,7 +7,15 @@ namespace MultiSetConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MultiSet<char> m = new MultiSet<char>();
+            m.Add('a');
+            m.Add('a');
+            m.Add('a');
+            m.Add('b');
+            m.Add('b');
+            m.Add('c');
+            m.ToString();
+            
         }
     }
 }
